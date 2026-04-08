@@ -1,5 +1,5 @@
 // Change this to your deployed Railway backend URL once it is running
-const PROD_API_URL = 'https://YOUR_BACKEND_URL.railway.app/api'; 
+const PROD_API_URL = 'https://video-rental-store-backend-production.up.railway.app/api'; 
 
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://localhost:8080/api' 
