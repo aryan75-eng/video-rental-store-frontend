@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Rental Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Video Rental Store</h1>
+            <p>Manage your video inventory with ease</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Actions Panel -->
+            <div class="actions-panel">
+                <h2>Actions</h2>
+                
+                <div class="action-group">
+                    <input type="text" id="videoTitle" placeholder="Enter video title">
+                    <div class="button-group">
+                        <button onclick="addVideo()" class="btn btn-add">➕ Add Video</button>
+                        <button onclick="removeVideo()" class="btn btn-remove">🗑️ Remove Video</button>
+                        <button onclick="rentVideo()" class="btn btn-rent">🎯 Rent Video</button>
+                        <button onclick="returnVideo()" class="btn btn-return">🔄 Return Video</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inventory Panel -->
+            <div class="inventory-panel">
+                <h2>📀 Video Inventory</h2>
+                <div id="inventoryList" class="inventory-list"></div>
+            </div>
+
+            <!-- Audit Log Panel -->
+            <div class="audit-panel">
+                <h2>📋 Activity Log</h2>
+                <div id="auditLog" class="audit-log"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js?v=1.2"></script>
+</body>
+</html>
